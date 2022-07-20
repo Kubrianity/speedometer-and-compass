@@ -61,8 +61,12 @@
   <script>
 
     const arrow = document.querySelector('.arrow');
-    const speedValue = document.querySelector('.speedValue');
-    
+    const speedValue = document.querySelector('.speed-value');
+
+    navigator.geolocation.watchPosition(data => {
+      console.log(data); // geoposition object
+    })
+
   </script>
 </body>
 </html>
