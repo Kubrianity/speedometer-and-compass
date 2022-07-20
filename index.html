@@ -67,6 +67,9 @@
       console.log(data); // geoposition object
       speedValue.textContent = data.coords.speed;
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+    }, (err) => {
+      console.err(err);
+      alert('Something went wrong!');
     })
 
   </script>
